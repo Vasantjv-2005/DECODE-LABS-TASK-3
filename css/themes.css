@@ -1,0 +1,145 @@
+/* css/themes.css */
+
+/* Accent Color Variations */
+body.theme-blue {
+  --accent-primary: var(--color-blue);
+  --accent-secondary: var(--color-cyan);
+  --accent-rgb: 59, 130, 246;
+  --accent-gradient: linear-gradient(135deg, var(--color-blue) 0%, var(--color-cyan) 100%);
+  --accent-glow: rgba(59, 130, 246, 0.15);
+  --border-glow: rgba(59, 130, 246, 0.3);
+}
+
+body.theme-violet {
+  --accent-primary: var(--color-violet);
+  --accent-secondary: var(--color-blue);
+  --accent-rgb: 139, 92, 246;
+  --accent-gradient: linear-gradient(135deg, var(--color-violet) 0%, var(--color-blue) 100%);
+  --accent-glow: rgba(139, 92, 246, 0.15);
+  --border-glow: rgba(139, 92, 246, 0.3);
+}
+
+body.theme-cyan {
+  --accent-primary: var(--color-cyan);
+  --accent-secondary: var(--color-blue);
+  --accent-rgb: 6, 182, 212;
+  --accent-gradient: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-blue) 100%);
+  --accent-glow: rgba(6, 182, 212, 0.15);
+  --border-glow: rgba(6, 182, 212, 0.3);
+}
+
+/* Light Theme Overrides */
+body.light-theme {
+  --bg-primary: #f8fafc; /* Slate 50 */
+  --bg-secondary: #f1f5f9; /* Slate 100 */
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --bg-card-hover: rgba(255, 255, 255, 0.95);
+  
+  --border-color: rgba(15, 23, 42, 0.08);
+  --border-color-hover: rgba(15, 23, 42, 0.15);
+  
+  --text-primary: #0f172a; /* Slate 900 */
+  --text-secondary: #475569; /* Slate 600 */
+  --text-muted: #94a3b8; /* Slate 400 */
+  
+  --bg-dark-800: #e2e8f0; /* Slate 200 */
+  --bg-dark-700: #cbd5e1; /* Slate 300 */
+  
+  --shadow-premium: 0 10px 30px -10px rgba(0, 0, 0, 0.05), inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Light mode adjustments for specific elements */
+body.light-theme .bg-grid-overlay {
+  background-image: 
+    linear-gradient(rgba(15, 23, 42, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.02) 1px, transparent 1px);
+  mask-image: radial-gradient(circle at center, black 60%, transparent 95%);
+  -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 95%);
+}
+
+body.light-theme .navbar {
+  background: rgba(248, 250, 252, 0.75);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+body.light-theme .navbar.scrolled {
+  background: rgba(248, 250, 252, 0.9);
+}
+
+body.light-theme .glow-blob {
+  opacity: 0.12;
+  filter: blur(140px);
+}
+
+body.light-theme .hero-tag {
+  background: rgba(15, 23, 42, 0.02);
+  border-color: rgba(15, 23, 42, 0.06);
+}
+
+body.light-theme .hero-subtitle {
+  color: #334155;
+}
+
+body.light-theme .btn-secondary {
+  background: rgba(15, 23, 42, 0.02);
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+body.light-theme .btn-secondary:hover {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+body.light-theme .faq-icon-wrapper {
+  background: rgba(15, 23, 42, 0.03);
+}
+
+body.light-theme .faq-item.open .faq-icon-wrapper {
+  background: var(--accent-primary);
+  color: #ffffff;
+}
+
+body.light-theme .float-btn {
+  background: rgba(255, 255, 255, 0.9);
+  color: #475569;
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+body.light-theme .float-btn:hover {
+  background: var(--accent-primary);
+  color: #ffffff;
+}
+
+body.light-theme .slider-arrow {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+body.light-theme .slider-arrow:hover {
+  background: rgba(var(--accent-rgb), 0.05);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+body.light-theme .social-btn {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-theme .social-btn:hover {
+  background: rgba(var(--accent-rgb), 0.05);
+}
+
+body.light-theme .lightbox-caption {
+  background: rgba(255, 255, 255, 0.85);
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+body.light-theme .lightbox-caption-title {
+  color: #0f172a;
+}
+
+body.light-theme .mobile-nav {
+  background: rgba(248, 250, 252, 0.95);
+}
+body.light-theme .mobile-menu-toggle span {
+  background-color: #0f172a;
+}
